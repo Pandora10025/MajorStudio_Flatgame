@@ -26,12 +26,17 @@ public class Popup_Behavior : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             text.SetActive(true);
             text.GetComponent<Transform>().transform.localPosition = new Vector3(pos_x, pos_y+3, 0);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        text.SetActive(false);
     }
 }
