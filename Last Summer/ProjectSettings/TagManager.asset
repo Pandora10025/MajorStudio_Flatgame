@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - gate
+  - popup
   layers:
   - Default
   - TransparentFX
