@@ -25,7 +25,7 @@ public class Radio_Volume : MonoBehaviour
 
         if (radioInFrontDistance > 10)
         {
-            this.GetComponent<AudioSource>().;
+            //this.GetComponent<AudioSource>().;
         }
     }
 

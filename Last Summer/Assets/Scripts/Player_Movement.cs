@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class script : MonoBehaviour
 {
@@ -14,24 +15,26 @@ public class script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        /*if (Input.GetKey(KeyCode.W))
         {
             this.transform.localPosition += new Vector3(0, .05f, 0);
 
-        }
-        if (Input.GetKey(KeyCode.S))
+        }*/
+       /* if (Input.GetKey(KeyCode.S))
         {
             this.transform.localPosition += new Vector3(0, -.05f, 0);
 
-        }
+        }*/
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.localPosition += new Vector3(.05f, 0, 0);
+            this.transform.localPosition += new Vector3(.02f, 0, 0);
+            transform.Rotate(Vector3.back);
 
         }
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.localPosition += new Vector3(-.05f, 0, 0);
+            this.transform.localPosition += new Vector3(-.02f, 0, 0);
+            transform.Rotate(Vector3.forward);
         }
     }
 }
